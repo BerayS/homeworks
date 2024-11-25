@@ -33,22 +33,19 @@ int main() {
         bool found = false;
         for (int i = 0; i < salesData.size(); ++i) {
             if (salesData[i].first == itemName) {
-                // Ако съществува, добавяме стойността към съществуващата
                 salesData[i].second = currentValue;
                 found = true;
                 break;
             }
         }
-        if (!found) {
-            // Ако не съществува, добавяме нов запис
-            salesData.push_back(make_pair(itemName,currentValue));
-        }
+        if (!found) salesData.push_back(make_pair(itemName,currentValue));
+        
     }
 
 
     inFile.close();
 
-    // Сортиране на salesData.
+    // Сортиране.
     for (int i = 0; i < salesData.size(); i++) {
 
         int pos = 0;
@@ -65,9 +62,7 @@ int main() {
 
 
     // Записване на резултатите във файла
-    for (pair<string,double> e : sorted) {
-        outFile << e.first << "\t" << e.second << endl;
-    }
+    for (pair<string,double> e : sorted) outFile << e.first << "\t" << e.second << endl;
 
     outFile.close();
 

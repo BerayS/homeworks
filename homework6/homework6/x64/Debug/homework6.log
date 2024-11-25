@@ -1,0 +1,5 @@
+﻿  homework6.cpp
+C:\Users\serin\source\repos\homework6\homework6\homework6.cpp(6,43): warning C4081: expected 'newline'; found ';'
+C:\Users\serin\source\repos\homework6\homework6\homework6.cpp(30,20): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\serin\source\repos\homework6\homework6\homework6.cpp(59,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  homework6.vcxproj -> C:\Users\serin\source\repos\homework6\x64\Debug\homework6.exe
